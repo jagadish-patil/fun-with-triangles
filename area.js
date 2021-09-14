@@ -11,7 +11,7 @@ function calculateSidesMultiplication(base, height) {
 function calculateArea() {
     const sidesMultiplication = calculateSidesMultiplication(Number(sides[0].value), Number(sides[1].value));
     const areaOfTriangle = 1 / 2 * (sidesMultiplication);
-    outputEl.innerText = "The area of triangle is " + areaOfTriangle;
+    outputEl.innerHTML = "The area of triangle is " + areaOfTriangle + " cm<sup>2</sup>";
 }
 
 areaBtn.addEventListener("click", calculateArea);
